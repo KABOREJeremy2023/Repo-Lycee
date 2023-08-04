@@ -1,0 +1,136 @@
+﻿<html>
+<head><title> FORMULAIRE D'INSCRIPTION </title>
+<link rel="stylesheet" type:text/css; href="lpb1.css" >
+<style>
+.form{text-align:center; background-color:GhostWhite}
+#demo{float:right;background-color:white;}
+</style>
+</head>
+<body class=form>
+		<header>
+		
+		<div class="position">
+<h1> LYCEE PROFESSIONNEL DE BAMA</h1></div>
+<form>
+<nav class="font"><input type="search" name="q" placeholder="rechercher">
+<input type="submit" value="lancer!">
+</nav></form>
+</header>
+
+<nav>
+<ul>
+<li class="deroulant"><a href="index.html">Accueil</a></li>
+<li class="deroulant"><a href="ADMISSION.html">ADMISSION</a></li> &nbsp&nbsp&nbsp&nbsp
+ <li class="deroulant"><a href="gallery.html">GALLERY</a></li>
+<li class="deroulant"><a href="#">Parcours</a>
+<ul class="sous">
+<li><a href="Informatique.html">Génie Informatique</a>&emsp;&emsp;&nbsp&nbsp</li>
+<li><a href="Civil.html"> Génie civil</a>&emsp;&emsp;&nbsp&nbsp</li>
+<li><a href="Electricite.html"> Electricite.html</a>&emsp;&emsp;&nbsp&nbsp</li>
+<li><a href="Biologie.html"> Génie Biologie</a>&emsp;&emsp;&nbsp&nbsp</li>
+<li><a href="Comptabilite.html"> Comptabilité et contrôle Audit</a>&emsp;&emsp;&nbsp&nbsp</li>
+<li><a href="Maintenance.html"> mainténance industrielle</a>&emsp;&emsp;&nbsp&nbsp</li>
+</ul>
+</li>
+<li class="deroulant"><a href="contact.html">Contact</a></li>
+</ul>
+</nav><br><br><br>
+
+<h2 style="background-color:white"> FORMULAIRE D'INSCRIPTION</h2>
+<form>
+<fieldset style="background-color:white">
+<legend><br><br><br>Nom:<br><input type="text" id="fname" onchange="upperCase()"></legend>
+<script>
+function upperCase() {const x=document.getElementById("fname");
+x.value=x.value.toUpperCase();
+}
+</script><br>
+<legend>Prenom:<br><input type="text" id="fname" onchange="upperCase()"></legend>
+<script>
+function upperCase() {const x=document.getElementById("fname");
+x.value=x.value.toUpperCase();
+}
+</script><br>
+
+<legend><label for="phone"> Telephone:</label> <br>
+<input type ="number" id="phone" name="phone"> </legend><br>
+
+E-mail: <br><input type="text" id="mail" onchange="checkEmail()">
+	<script>
+		function testeTonMail(email) {
+		  const emailRegex = /\S+@\S+\.\S+/;
+		  return emailRegex.test(email);
+		}
+
+		function checkEmail() {
+		  const email = document.getElementById("mail").value;
+		  if (testeTonMail(email)) {
+		    alert("L'adresse e-mail est valide !");
+		  } else {
+    alert("L'adresse e-mail est invalide ! Veuillez reessayer.");
+		  }
+		}</script><br><br>
+
+<label for="school"> Etablissement d'origine:</label><br>
+<input type="texte" id="school" name="school"><br><br>
+
+<label for="matricule"> Numéro matricule:</label><br>
+<input type="texte" id="matricule" name="matricule"><br><br>
+<label for="moyenne"> Moyenne du premier cycle:</label><br>
+<input type="texte" id="moyenne" name="moyenne"><br><br>
+
+<label for="moyenne"> Moyenne générale de la classe de troisième:</label><br>
+<input type="texte" id="moyenne" name="moyenne"><br><br>
+
+<label for="moyenne"> Moyenne obtenue au BEPC:</label><br>
+<input type="texte" id="moyenne" name="moyenne"><br><br>
+
+<input type="radio"value="OUI" name="R1"checked>Premier tour<br>
+<input type="radio" Name="R1" value="NON"> Second tour<br><br>
+
+<label for="document"> Attestation du BEPC (PDF):</label><br>
+<input type="file" id="document" name="document"><br><br><br>
+<label for="document"> Pièce d'Identité (PDF):</label><br>
+<input type="file" id="document" name="document"><br><br><br>
+
+<select size="1" name="Départements">
+				<option selected>Agro-Alimentatire</option>
+				<option>Génie Informatique</option>
+				<option>Génie Electrique</option>
+				<option>Génie Civil</option>
+				<option>Génie Biologie</option>
+				<option>Comptabilité Contrôle Audit</option>
+				<option>Mainténance Industrielle</option>
+			</select><br><br><br>
+
+<label for="pwd"> Mot de passe:</label><br> 
+<input type="password" id="pwd" name="pwd"><br><br><br>
+
+<input type="submit" Value="Submit">
+<input type="reset" value="Annuler" style="background-color:red"><br><br><br>
+
+</fieldset></form><br><br>
+<form action="/leads-subscribing-newsletter" method="post" style="text-align:center">
+<div style="background-color:white"><label for="email">E-mail :</label><br> 
+<input id="email" name="subscriber_email" type="email" /></div><br><br>
+
+<div style="background-color:white"><button type="submit">S&#39;abonner &agrave; la newsletter</button> </div>
+</form><br>
+<p id="demo"></p>
+ <script>
+
+setInterval(myTimer, 1000)
+function myTimer(){const d=new Date();
+document.getElementById("demo").innerHTML=d.toLocaleTimeString();
+}</script><br>
+<footer>
+    
+<p style="text-align:center">Copyright © 2023 lyceeprofessionelbama.com &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <a href="#">retour en haut de page</a></p>
+</footer>
+
+</body>
+</html>
+
+
+
+

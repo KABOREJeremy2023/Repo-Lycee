@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>contact</title>
+<link rel="stylesheet" type:text/css; href="lpb1.css" >
+<style>
+.form{text-align:center; background-color:GhostWhite}
+#demo{float:right;background-color:white;}
+</style>
+</head>
+<body class=form>
+		<header>
+		
+		<div class="position">
+<h1> LYCEE PROFESSIONNEL DE BAMA</h1></div>
+<form>
+<nav class="font"><input type="search" name="q" placeholder="rechercher">
+<input type="submit" value="lancer!">
+</nav></form>
+</header>
+
+<nav>
+<ul>
+<li class="deroulant"><a href="index.html">Accueil</a></li>
+<li class="deroulant"><a href="ADMISSION.html">ADMISSION</a></li> &nbsp&nbsp&nbsp&nbsp
+ <li class="deroulant"><a href="gallery.html">GALLERY</a></li>
+<li class="deroulant"><a href="#">Parcours</a>
+<ul class="sous">
+<li><a href="Informatique.html">Génie Informatique</a>&emsp;&emsp;&nbsp&nbsp</li>
+<li><a href="Civil.html"> Génie civil</a>&emsp;&emsp;&nbsp&nbsp</li>
+<li><a href="Electricite.html"> Electricite.html</a>&emsp;&emsp;&nbsp&nbsp</li>
+<li><a href="Biologie.html"> Génie Biologie</a>&emsp;&emsp;&nbsp&nbsp</li>
+<li><a href="Comptabilite.html"> Comptabilité et contrôle Audit</a>&emsp;&emsp;&nbsp&nbsp</li>
+<li><a href="Maintenance.html"> mainténance industrielle</a>&emsp;&emsp;&nbsp&nbsp</li>
+</ul>
+</li>
+<li class="deroulant"><a href="contact.html">Contact</a></li>
+</ul>
+</nav><br><br><br>
+
+<div id="after_submit"></div>
+<form style="text-align:center" id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+  <div class="row">
+    <label class="required" for="name">Nom:</label><br /><br />
+    <input id="name" class="input" name="name" type="text" value="" size="30" /><br /><br />
+    <span id="name_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email">Email:</label><br /><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" /><br /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message"> Message:</label><br /><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br /><br />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+        
+    <input style="background-color:green" id="submit_button" type="submit" value="Envoyer l'email" />
+</form><br><br><br>
+&emsp;
+
+<form action="/leads-subscribing-newsletter" method="post" style="text-align:center">
+<div style="background-color:white"><label for="email">E-mail?:</label><br> 
+<input id="email" name="subscriber_email" type="email" /></div><br><br>
+
+<div style="background-color:white"><button type="submit">S&#39;abonner &agrave; la newsletter</button> </div>
+</form><br>
+<p id="demo"></p>
+ <script>
+
+setInterval(myTimer, 1000)
+function myTimer(){const d=new Date();
+document.getElementById("demo").innerHTML=d.toLocaleTimeString();
+}</script><br>
+<footer>
+    
+<p style="text-align:center">Copyright © 2023 lyceeprofessionelbama.com &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <a href="#">retour en haut de page</a></p>
+</footer>
+</body></html>

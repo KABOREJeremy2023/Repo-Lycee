@@ -1,0 +1,105 @@
+﻿ h1, h2,h3,.site-title {
+		font-family: 'Open Sans', sans-serif;
+	}
+body.site {
+		border-top: 3px solid ;
+		background-color:GhostWhite;
+border:solid 5px; border-size:6px 2px; border-color:gray;
+display:inline-block;
+	}
+div.image{border:skyblue 3px SOLID; border-width:10px;
+}
+
+div.position{text-align:center; background-color:skyblue; color:pink;
+font-size: 110%;
+font-weight: bold; }
+.font{ font-size:10px; font-style:bold; 
+text-align:right;
+}
+
+div.container {
+    display: inline-block;
+    position: Center;
+}
+h2{margin-top: 1em;
+margin-bottom: 1em;
+font-size: 110%;
+font-weight: bold;
+}
+
+div.mise{ background-color:CornflowerBlue;
+font-size:1.5em;line-heigth:3em;word-spacing:0.1em; display:block}
+div.resu{ font-size:1.5em;line-heigth:3em;word-spacing:0.1em; width:30%}
+div.menu,div.info{float:left}
+div.container.text {
+    position: absolute;
+    text-align: center;  
+font-style:bold;
+font-size:100
+    margin: 0 auto;
+color:white;
+    top: 22.5%;
+    width:98.4%;
+}
+#demo{float: right; background-color: white}
+
+*{margin: 0px; padding: 0px; font-family: Avenir, sans-serif;}
+
+nav{width: 100%; margin: 0 auto; 
+background-color:lightgray; 
+position: sticky; 
+top: 0px;}
+
+nav ul{list-style-type: none;}
+
+nav ul li{float: left; 
+width: 25%; 
+text-align:center;
+position: relative; 
+background-color:lightgray;}
+
+nav ul::after{content:""; 
+display: block; 
+clear: both; }
+
+nav a{display: block; 
+text-decoration: none; 
+color:black; 
+border-bottom: 2px solid transparent;
+padding: 10px 0px; 
+}
+
+nav a:hover{color: orange; 
+border-bottom: 2px solid gold; }
+
+.sous{display: none;
+box-shadow: 0px 1px 2px #CCC; 
+background-color:lightgray;
+position:absolute;
+width:100%; 
+z-index:1000;}
+
+nav > ul li:hover .sous{
+display:block; }
+
+.sous li{float:none;
+width:100%; 
+text-align:left;} 
+
+.sous a{padding: 10px;
+ border-bottom: none;} 
+
+.sous a:hover{ border-bottom: none; 
+background-color: RGBa(200,200,200,0.1);}
+
+
+.deroulant > a::after{content :""; font-size :12px ;} 
+
+
+
+
+
+
+
+
+
